@@ -60,6 +60,16 @@ during the mission.
 - Automated flights only from KSC for now.
 - First-stage soot is not kept when you reload a save.
 
+## License
+
+- Code (`SterlingFlight.dll` and its source): MIT
+- Parts, models, textures, liveries: CC BY 4.0 (see Credits)
+- Bai Jamjuree font: SIL Open Font License 1.1
+
+SPDX: `MIT AND CC-BY-4.0`. Full text in `LICENSE`.
+
+Source code: the [`source/SterlingFlight`](source/SterlingFlight) folder of this repository. Build notes are in its README.
+
 ## Credits
 
 Sparrow stages, interstage, fairing, grid fins and octaweb are derived from "Falcon 9 - SpaceX" by Stanley Creative

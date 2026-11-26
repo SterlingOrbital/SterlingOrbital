@@ -1,0 +1,69 @@
+Sterling Orbital - license
+
+SPDX-License-Identifier: MIT AND CC-BY-4.0
+
+Sterling Orbital has three parts under three licenses:
+
+  1. Code (SterlingFlight.dll and its source code)        MIT License, full text in section 1
+  2. Parts, models, textures, liveries and other assets   Creative Commons Attribution 4.0 International, section 2
+  3. Bai Jamjuree font files (Fonts/)                     SIL Open Font License 1.1, full text in Fonts/OFL.txt
+
+
+==============================================================================================================
+1. Code - MIT License
+==============================================================================================================
+
+Copyright (c) 2026 Sterling Orbital
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+==============================================================================================================
+2. Parts and assets - Creative Commons Attribution 4.0 International (CC BY 4.0)
+==============================================================================================================
+
+Copyright (c) 2026 Sterling Orbital
+
+The parts, 3D models, textures, liveries, icons and other non-code assets of Sterling Orbital (everything in the
+mod except SterlingFlight.dll and the Fonts folder) are licensed under the Creative Commons Attribution 4.0
+International License. Summary: https://creativecommons.org/licenses/by/4.0/
+Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+You may share and adapt them for any purpose, including commercially, as long as you give appropriate credit,
+link to the license and say whether you made changes.
+
+Attribution for included work:
+
+  The Sparrow stages, interstage, fairing, grid fins and octaweb are derived from "Falcon 9 - SpaceX" by
+  Stanley Creative (https://sketchfab.com/3d-models/394f7cf52d124bbd9db69f24d1ff2f08), licensed CC BY 4.0
+  (https://creativecommons.org/licenses/by/4.0/). Modified: split into game parts, re-meshed, re-textured and
+  re-branded. Not endorsed by the author.
+
+  The Anvil 1D and Anvil Vac engines, the drone ship, the landing legs, the liveries and the Sterling Orbital
+  branding are original work of Sterling Orbital.
+
+Sterling Orbital is not affiliated with or endorsed by Space Exploration Technologies Corp.
+
+
+==============================================================================================================
+3. Font - SIL Open Font License 1.1
+==============================================================================================================
+
+Bai Jamjuree by Cadson Demak, licensed under the SIL Open Font License, Version 1.1. The full license text is in
+Fonts/OFL.txt in the mod download, next to the font files (https://openfontlicense.org).
