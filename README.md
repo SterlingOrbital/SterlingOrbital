@@ -59,7 +59,6 @@ during the mission.
 - **The guidance system is not perfect, but excitement is guaranteed.**
 - Automated flights only from KSC for now.
 - First-stage soot is not kept when you reload a save.
-- If you drag the octaweb's engine icon to a different stage, only the centre engine group moves with it.
 
 ## Credits
 
