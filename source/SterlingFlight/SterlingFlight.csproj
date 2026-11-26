@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>SterlingFlight</AssemblyName>
+    <RootNamespace>SterlingFlight</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <!--
+    Build paths. Defaults suit a standard Windows install; override any of them on the command line, e.g.
+      dotnet build -c Release -p:GameDir="D:\Games\Kitten Space Agency" -p:StarMapDir="D:\StarMap"
+    GameDir    folder holding KSA.dll
+    StarMapDir folder holding StarMap.API.dll and 0Harmony.dll
+    ModOut     where the built DLL and mod.toml are copied (set DeployMod=false to skip the copy)
+  -->
+  <PropertyGroup>
+    <GameDir Condition="'$(GameDir)' == ''">C:\Program Files\Ahwoo\Games\Kitten Space Agency</GameDir>
+    <StarMapDir Condition="'$(StarMapDir)' == ''">$(USERPROFILE)\Documents\KSA_StarMap</StarMapDir>
+    <ModOut Condition="'$(ModOut)' == ''">$(USERPROFILE)\Documents\My Games\Kitten Space Agency\mods\SterlingOrbital</ModOut>
+    <DeployMod Condition="'$(DeployMod)' == ''">true</DeployMod>
+  </PropertyGroup>
+
+  <!-- compile against the game and StarMap; nothing from them is copied into the mod -->
+  <ItemGroup>
+    <Reference Include="$(GameDir)\KSA.dll" Private="false" />
+    <Reference Include="$(GameDir)\Brutal.*.dll" Private="false" />
+    <Reference Include="$(GameDir)\Bepu*.dll" Private="false" />
+    <Reference Include="$(GameDir)\Planet.*.dll" Private="false" />
+    <Reference Include="$(StarMapDir)\StarMap.API.dll" Private="false" />
+    <Reference Include="$(StarMapDir)\0Harmony.dll" Private="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="mod.toml" CopyToOutputDirectory="Always" />
+  </ItemGroup>
+
+  <Target Name="DeployMod" AfterTargets="Build" Condition="'$(DeployMod)' == 'true'">
+    <MakeDir Directories="$(ModOut)" />
+    <Copy SourceFiles="$(TargetPath);$(OutDir)mod.toml;$(OutDir)SterlingFlight.deps.json" DestinationFolder="$(ModOut)" />
+  </Target>
+
+</Project>

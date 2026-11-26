@@ -1,0 +1,5 @@
+name = "SterlingOrbital"
+assets = [ "Anvil1DExhaustAssets.xml", "Anvil1DEngineAssets.xml", "AnvilVacAssets.xml", "SparrowOctawebAssets.xml", "SparrowPartsAssets.xml", "DroneShipAssets.xml" ]
+
+[StarMap]
+EntryAssembly = "SterlingFlight"
