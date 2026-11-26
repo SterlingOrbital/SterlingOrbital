@@ -10,13 +10,15 @@ site (RTLS) or on the drone ship.
 
 ## What's included
 
-| Folder | What it is |
-|---|---|
-| `SterlingSparrow` | The Sparrow parts: first stage (clean and sooted liveries, plain variants), interstage with attitude thrusters, second stage, payload adapter, fairing halves, grid fins, landing legs, the octaweb (9x Anvil 1D) and the Anvil Vac upper-stage engine. |
-| `SterlingDroneShip` | The autonomous drone ship "It Was Never Goodbye", which spawns at sea for drone ship landings. |
-| `SterlingFlight` | The flight software (code mod): mission control panel, launch webcast, booster guidance and landing, grid fin aerodynamics, landing leg suspension, engine sets (9 / 3 / 1), soot on the first stage after the entry and landing burns. |
+One mod folder, `SterlingOrbital`, with everything in it:
 
-All three folders are needed.
+- **Parts:** first stage (clean and sooted liveries, plain variants), interstage, second stage, payload adapter,
+  fairing halves, grid fins, landing legs, the octaweb (9x Anvil 1D) and the Anvil Vac upper-stage engine. 24 attitude
+  thrusters are built into the interstage and first stage.
+- **Drone ship:** the autonomous drone ship "It Was Never Goodbye", which spawns at sea for drone ship landings.
+- **Flight software (code):** mission control panel, launch webcast, booster guidance and landing, grid fin
+  aerodynamics, landing leg suspension, engine sets (9 / 3 / 1), soot on the first stage after the entry and landing
+  burns.
 
 ![What's included](sparrow_whats_included.jpg)
 
@@ -25,13 +27,12 @@ All three folders are needed.
 ## Requirements
 
 - Kitten Space Agency, build 2026.11.25.5949 or newer.
-- The StarMap mod loader (the `SterlingFlight` code mod is a StarMap mod).
+- The StarMap mod loader (the flight software is a StarMap mod).
 
 ## Install
 
-- **Manual:** copy `SterlingSparrow`, `SterlingDroneShip` and `SterlingFlight` into
-  `Documents\My Games\Kitten Space Agency\mods\`, enable them in that folder's `manifest.toml`, and start the
-  game through StarMap.
+- **Manual:** copy the `SterlingOrbital` folder into `Documents\My Games\Kitten Space Agency\mods\`, enable it in
+  that folder's `manifest.toml`, and start the game through StarMap.
 
 ## Flying a mission
 
@@ -40,9 +41,12 @@ All three folders are needed.
    adapter, your payload, fairing halves.
 2. Put it on the pad at **KSC (LC-39A)**. Automated flights are KSC-only in this version; other launch sites show a
    notice instead of the LAUNCH button.
-3. Open the mission panel with **Ctrl+Shift+F**. Pick **RTLS** or **DRONESHIP**, set the orbit and inclination (and
+3. Open the mission panel from the **Sterling Orbital** menu in the top menu bar (or **Ctrl+Shift+F**). Pick **RTLS** or **DRONESHIP**, set the orbit and inclination (and
    for the drone ship, its distance downrange) by dragging or scrolling the dials, then press **LAUNCH**.
 4. Watch it fly. **ABORT** stops the autopilot. F2 or Ctrl+Shift+W leaves the webcast view.
+5. When the booster has landed and the upper stage is in orbit, the panel shows **MISSION COMPLETE**. Press
+   **RECOVER VEHICLE** to recover the booster (and the drone ship); the panel closes and is ready for the next flight.
+   The upper stage stays in orbit.
 
 The panel can be resized with the grip in its bottom-right corner or Ctrl + mouse wheel. LAUNCH does not save your
 game; save from the game's menu if you want to repeat a flight.
@@ -52,6 +56,7 @@ during the mission.
 
 ## Known limitations
 
+- **The guidance system is not perfect, but excitement is guaranteed.**
 - Automated flights only from KSC for now.
 - First-stage soot is not kept when you reload a save.
 - If you drag the octaweb's engine icon to a different stage, only the centre engine group moves with it.
@@ -63,7 +68,7 @@ Sparrow stages, interstage, fairing, grid fins and octaweb are derived from "Fal
 (https://creativecommons.org/licenses/by/4.0/). Modified: split into game parts, re-meshed, re-textured and
 re-branded. Not endorsed by the author.
 
-Bai Jamjuree by Cadson Demak, SIL Open Font License 1.1 (see `SterlingFlight/Fonts/OFL.txt`).
+Bai Jamjuree by Cadson Demak, SIL Open Font License 1.1 (see `Fonts/OFL.txt`).
 
 The Anvil 1D and Anvil Vac engines, the drone ship, the landing legs, the liveries, the Sterling Orbital branding
 and all code are original work.
