@@ -48,8 +48,7 @@ One mod folder, `SterlingOrbital`, with everything in it:
    **RECOVER VEHICLE** to recover the booster (and the drone ship); the panel closes and is ready for the next flight.
    The upper stage stays in orbit.
 
-The panel can be resized with the grip in its bottom-right corner or Ctrl + mouse wheel. LAUNCH does not save your
-game; save from the game's menu if you want to repeat a flight.
+The panel can be resized with the grip in its bottom-right corner or Ctrl + mouse wheel.
 
 Right-click the octaweb to choose the engine set (9, 3 or 1 engines). The flight software switches sets itself
 during the mission.
