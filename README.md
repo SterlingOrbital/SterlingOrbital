@@ -31,6 +31,7 @@ One mod folder, `SterlingOrbital`, with everything in it:
 
 ## Install
 
+- **Borea:** install "Sterling Orbital" from the Borea launcher.
 - **Manual:** copy the `SterlingOrbital` folder into `Documents\My Games\Kitten Space Agency\mods\`, enable it in
   that folder's `manifest.toml`, and start the game through StarMap.
 
