@@ -2,7 +2,7 @@
 
 ![Sparrow on the drone ship](sparrow_hero.jpg)
 
-**[Download the latest release](https://github.com/SterlingOrbital/SterlingOrbital/releases/latest)** (`SterlingOrbital_v1.0.0.zip`)
+**[Download the latest release](https://github.com/SterlingOrbital/SterlingOrbital-SparrowLaunchSystem/releases/latest)** (`SterlingOrbital_v1.0.0.zip`)
 
 A reusable two-stage rocket for Kitten Space Agency, with its own engines, a drone ship, and flight software that
 flies the whole mission: ascent, staging, and a propulsive landing of the first stage either back at the launch
